@@ -9,24 +9,25 @@ A simple implementation of a feedforward neural network with a sigmoid activatio
 
 ```
 Training network...
+Training complete. Running feedforward pass...
 Presenting input: [0, 0]
 Expected output: [0, 0, 0]
-Network output: [0.00022196 0.02425447 0.03501084]
+Network output: [0.00014905 0.02690904 0.03768774]
 Network output (rounded): [0. 0. 0.]
 
 Presenting input: [0, 1]
 Expected output: [0, 1, 1]
-Network output: [0.02457758 0.98431149 0.96514629]
+Network output: [0.02010323 0.98059553 0.96490723]
 Network output (rounded): [0. 1. 1.]
 
 Presenting input: [1, 0]
 Expected output: [0, 1, 1]
-Network output: [0.02231378 0.9843856  0.96538649]
+Network output: [0.01953619 0.98080554 0.96479895]
 Network output (rounded): [0. 1. 1.]
 
 Presenting input: [1, 1]
 Expected output: [1, 1, 0]
-Network output: [0.96875556 0.99971883 0.03888555]
+Network output: [0.97532067 0.99983259 0.03608267]
 Network output (rounded): [1. 1. 0.]
 ```
 

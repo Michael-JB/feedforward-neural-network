@@ -91,6 +91,7 @@ def main():
   net = NeuralNetwork(input_neuron_count, hidden_neuron_count, output_neuron_count)
   print('Training network...')
   net.train(logic_training_data, epoch_count, learning_rate)
+  print('Training complete. Running feedforward pass...')
 
   for input_activation, expected_output in logic_training_data:
     print('Presenting input: ' + str(input_activation))

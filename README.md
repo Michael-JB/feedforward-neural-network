@@ -1,6 +1,6 @@
 # feedforward-neural-network
 
-A simple implementation of a feedforward neural network with a sigmoid activation function and backpropagation training. While the network can be repurposed to suit simple supervised learning tasks, the default task calculates the bitwise AND, OR and XOR of a two-neuron input.
+A simple implementation of a feedforward neural network with a sigmoid activation function and backpropagation training. While the network can be repurposed to suit simple supervised learning tasks, the default task calculates the bitwise `AND`, `OR` and `XOR` of a two-neuron input.
 
 ## Usage
 

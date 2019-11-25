@@ -54,13 +54,13 @@ class NeuralNetwork:
         # Partial derivative of cost function wrt. output biases is equivalent to this delta value
         d_output_bias = delta_o
         # Calculate partial derivative of cost function wrt. output weights
-        d_output_weights = np.outer(delta_o, hidden_activations).T
+        d_output_weights = np.outer(hidden_activations, delta_o)
 
         # Calculate local error values for hidden layer
         delta_h = np.dot(self.output_weights, delta_o) * self.d_sigmoid(hidden_weighted_inputs)
         # Calculate partial derivatives of cost function wrt. hidden biases and weights
         d_hidden_bias = delta_h
-        d_hidden_weights = np.outer(delta_h, input_activation).T
+        d_hidden_weights = np.outer(input_activation, delta_h)
 
         # Increment epoch deltas with calculated values
         epoch_d_hidden_bias += d_hidden_bias
